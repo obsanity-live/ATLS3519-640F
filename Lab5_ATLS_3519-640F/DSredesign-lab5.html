@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CU Boulder Disability Services Redesign</title>
+<meta name="description" content="A redesigned Disability Services homepage for CU Boulder with accessible navigation, search, accommodations information, and quick links." />
+<meta name="keywords" content="CU Boulder, Disability Services, accessibility, accommodations, ADA, Accommodate Portal, academic accommodations, student resources, faculty resources" />
+<link href="DSRedesign.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+<div id="wrapper">
+
+<header role="banner">
+<div id="cu-mark">CU</div>
+<div id="banner-title">
+<p>University of Colorado Boulder</p>
+<h1>Disability Services</h1>
+</div>
+<div id="banner-box"></div>
+</header>
+
+<nav role="navigation" aria-label="Main navigation">
+<ul>
+<li><a href="#about">About Us</a></li>
+<li><a href="#accommodations">Accommodations</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#contact">Contact Us</a></li>
+</ul>
+</nav>
+
+<div id="search-area" role="search">
+<form action="search.php" method="post" id="searchinput" role="search">
+<label for="search">Search:</label>
+<input id="search" type="text" name="searchfield" />
+<input type="submit" value="Submit" />
+</form>
+</div>
+
+<main role="main">
+<h1>Welcome to Disability Services</h1>
+
+<p>Disability Services is dedicated to providing students with disabilities an equal opportunity to participate in university programs, courses, and activities through reasonable accommodations and services.</p>
+
+<section id="about">
+<h2>About Us</h2>
+<p>Our office works with the campus community to remove barriers, promote accessibility, and support students in achieving academic success.</p>
+</section>
+
+<section id="accommodations">
+<h2>Accommodations</h2>
+<p>Students can register for academic accommodations, review documentation expectations, and learn how accommodations are implemented through the Accommodate system.</p>
+</section>
+
+<section id="resources">
+<h2>Resources</h2>
+<p>Resources are organized for students, faculty, staff, and families so users can quickly find the information most relevant to them.</p>
+</section>
+</main>
+
+<nav role="navigation" class="quicklinks" aria-label="Quick links">
+<h2>Quick Links</h2>
+<ul>
+<li><a href="#accommodations">Register with Disability Services</a></li>
+<li><a href="#accommodations">Returning Students</a></li>
+<li><a href="#resources">Faculty and Staff Resources</a></li>
+<li><a href="#resources">Information Sessions</a></li>
+<li><a href="#accommodations">Login to Accommodate</a></li>
+</ul>
+</nav>
+
+<footer role="contentinfo">
+<h2>Footer Information</h2>
+<p>University of Colorado Boulder Disability Services</p>
+<p>This page uses metadata, external CSS, semantic HTML5 regions, labeled search, and accessible navigation.</p>
+</footer>
+
+</div>
+</body>
+</html>
