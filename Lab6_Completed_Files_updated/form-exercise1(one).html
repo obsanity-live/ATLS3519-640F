@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Forms Exercise One - Accessible Proposal Form</title>
+<link rel="stylesheet" href="css/form.css" />
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="wrapper">
+<form action="" method="post" id="proposal2014">
+
+<h1>Proposal Form</h1>
+<p class="instructions">Fields marked with an asterisk (*) are required. Click a field label to move directly to that form control. Required fields are also highlighted in pale yellow.</p>
+
+<div id="formcol1">
+<fieldset>
+<legend>Speaker Info</legend>
+<ul>
+<li>
+<label for="fstspkr1">*First Name:</label>
+<input id="fstspkr1" name="fstspkr1" type="text" class="reqfield" title="Required field" required />
+</li>
+<li>
+<label for="lstname1">*Last Name:</label>
+<input id="lstname1" name="lstname1" type="text" class="reqfield" title="Required field" required />
+</li>
+<li>
+<label for="spkrtitle1">Title:</label>
+<input id="spkrtitle1" name="spkrtitle1" type="text" maxlength="48" />
+</li>
+<li>
+<label for="company1">Company:</label>
+<input id="company1" name="company1" type="text" />
+</li>
+<li>
+<label for="department1">Department:</label>
+<input id="department1" name="department1" type="text" />
+</li>
+<li>
+<label for="address1">*Address:</label>
+<input id="address1" class="reqfield" name="address1" type="text" title="Required field" required />
+</li>
+</ul>
+</fieldset>
+</div>
+
+<div id="multchoice">
+<fieldset>
+<legend>Type of Presentation</legend>
+<p>
+<span><input value="1" id="TypeofPres_lec" name="p-type" type="radio" /> <label for="TypeofPres_lec">Lecture</label></span>
+<span><input value="2" id="TypeofPres_lab" name="p-type" type="radio" /> <label for="TypeofPres_lab">Lab</label></span>
+</p>
+<p class="submit-button">
+<input type="submit" value="Submit your proposal" />
+</p>
+</fieldset>
+</div>
+
+</form>
+</div>
+</body>
+</html>
