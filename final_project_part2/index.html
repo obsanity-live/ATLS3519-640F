@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spohn Performance Redesign Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="utility-bar">
+    <div class="utility-inner">
+      <span>Free ground shipping on qualifying orders over $99</span>
+      <a href="#support">Fitment help: 1-888-365-6064</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">SPOHN PERFORMANCE<span>CHASSIS AND SUSPENSION</span></a>
+      <form class="search-form" action="products.html" method="get">
+        <label for="site-search">Search products, vehicles, or part numbers</label>
+        <input id="site-search" name="q" type="search" placeholder="Example: rear lower control arms">
+        <button type="submit">Search</button>
+      </form>
+      <div class="header-actions">
+        <a href="#account">Account</a>
+        <a href="#cart">Cart (0)</a>
+      </div>
+    </div>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <div class="nav-inner">
+        <a href="#vehicle">Shop by Vehicle</a>
+        <a href="products.html">Parts</a>
+        <a href="#support">Support</a>
+        <a href="#about">About</a>
+        <a href="#builds">Customer Builds</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <h1>Performance parts that fit your vehicle</h1>
+          <p>Find suspension, chassis, and drivetrain components with clear fitment information and direct access to technical support.</p>
+          <a class="button button-secondary" href="products.html">Browse all parts</a>
+        </div>
+        <form class="vehicle-card" id="vehicle" action="products.html" method="get">
+          <h2>Shop by vehicle</h2>
+          <p>Select the vehicle you are working on to see compatible parts.</p>
+          <div class="vehicle-grid">
+            <div>
+              <label for="year">Year</label>
+              <select id="year" name="year">
+                <option value="">Select year</option>
+                <option>1988</option>
+                <option>2000</option>
+                <option>2020</option>
+              </select>
+            </div>
+            <div>
+              <label for="make">Make</label>
+              <select id="make" name="make">
+                <option value="">Select make</option>
+                <option>Avanti</option>
+                <option>Chevrolet</option>
+                <option>Ford</option>
+              </select>
+            </div>
+            <div>
+              <label for="model">Model</label>
+              <select id="model" name="model">
+                <option value="">Select model</option>
+                <option>Avanti</option>
+                <option>Camaro</option>
+                <option>Mustang</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit">Find compatible parts</button>
+        </form>
+      </div>
+    </section>
+    <div class="trust-row">
+      <div class="container trust-grid">
+        <span>Made in the USA</span>
+        <span>Fitment support</span>
+        <span>Secure checkout</span>
+        <span>Clear shipping and returns</span>
+      </div>
+    </div>
+    <section class="section" aria-labelledby="categories-title">
+      <div class="container">
+        <h2 id="categories-title">Shop popular categories</h2>
+        <p class="section-intro">Start with a part system or use the vehicle selector above to narrow every category to compatible products.</p>
+        <div class="card-grid">
+          <article class="category-card">
+            <a href="products.html">
+              <div class="part-visual" aria-hidden="true"><span class="visual-label">SUSPENSION</span></div>
+              <div class="card-body"><h3>Suspension</h3><p>Control arms, track bars, sway bars, and related hardware.</p></div>
+            </a>
+          </article>
+          <article class="category-card">
+            <a href="products.html">
+              <div class="part-visual" aria-hidden="true"><span class="visual-label">CHASSIS</span></div>
+              <div class="card-body"><h3>Chassis</h3><p>Components designed to improve strength, geometry, and handling.</p></div>
+            </a>
+          </article>
+          <article class="category-card">
+            <a href="products.html">
+              <div class="part-visual" aria-hidden="true"><span class="visual-label">DRIVETRAIN</span></div>
+              <div class="card-body"><h3>Drivetrain</h3><p>Rear-end, transmission, and mounting components.</p></div>
+            </a>
+          </article>
+          <article class="category-card">
+            <a href="products.html">
+              <div class="part-visual" aria-hidden="true"><span class="visual-label">REPLACEMENT</span></div>
+              <div class="card-body"><h3>Replacement parts</h3><p>Bushings, hardware, joints, and service components.</p></div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="featured-title">
+      <div class="container">
+        <h2 id="featured-title">Featured products</h2>
+        <p class="prototype-note">Prototype product names and prices are illustrative for the course redesign.</p>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="part-visual" aria-hidden="true"><span class="visual-label">CONTROL ARM</span></div>
+            <div class="card-body">
+              <h3><a href="products.html#product-one">Tubular rear lower control arms</a></h3>
+              <span class="fitment">Vehicle fitment available</span>
+              <p>High-strength tubular construction with serviceable bushings.</p>
+              <div class="price-row"><span class="price">$249.00</span><a class="button" href="products.html#product-one">View details</a></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="part-visual" aria-hidden="true"><span class="visual-label">TRACK BAR</span></div>
+            <div class="card-body">
+              <h3><a href="products.html#product-two">Adjustable rear track bar</a></h3>
+              <span class="fitment">Vehicle fitment available</span>
+              <p>Adjustable geometry for lowered or performance applications.</p>
+              <div class="price-row"><span class="price">$219.00</span><a class="button" href="products.html#product-two">View details</a></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="part-visual" aria-hidden="true"><span class="visual-label">SWAY BAR</span></div>
+            <div class="card-body">
+              <h3><a href="products.html#product-three">Performance rear sway bar</a></h3>
+              <span class="fitment">Vehicle fitment available</span>
+              <p>A balanced upgrade intended to reduce body roll.</p>
+              <div class="price-row"><span class="price">$329.00</span><a class="button" href="products.html#product-three">View details</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="support" aria-labelledby="support-title">
+      <div class="container">
+        <h2 id="support-title">Support before and after your purchase</h2>
+        <div class="support-grid">
+          <article class="support-card"><h3>Fitment help</h3><p>Talk with a technician before ordering a component that depends on exact vehicle configuration.</p><a href="mailto:support@example.com">Contact fitment support</a></article>
+          <article class="support-card"><h3>Installation resources</h3><p>Find product instructions, hardware lists, torque guidance, and related technical information.</p><a href="products.html#installation">Browse installation guidance</a></article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="builds" aria-labelledby="builds-title">
+      <div class="container">
+        <h2 id="builds-title">Customer builds</h2>
+        <p class="section-intro">See how customers use Spohn components in restorations, street cars, trucks, and competition vehicles.</p>
+        <div class="support-grid">
+          <article class="support-card"><h3>Restoration projects</h3><p>Browse vehicle stories with clear links to the parts used in each build.</p><a href="products.html">Explore compatible parts</a></article>
+          <article class="support-card"><h3>Submit a build</h3><p>Share photographs, vehicle details, and a parts list for possible inclusion in the gallery.</p><a href="#newsletter-title">Follow project updates</a></article>
+        </div>
+      </div>
+    </section>
+    <section class="section newsletter" aria-labelledby="newsletter-title">
+      <div class="container newsletter-grid">
+        <div><h2 id="newsletter-title">Product updates without the clutter</h2><p>Receive occasional announcements about new parts and technical resources.</p></div>
+        <form class="newsletter-form" action="index.html" method="get">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <button type="submit">Sign up</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section id="about"><h2>Spohn Performance</h2><p>Prototype redesign for an ATLS 3519 course project.</p></section>
+      <section><h3>Shop</h3><ul><li><a href="#vehicle">Shop by vehicle</a></li><li><a href="products.html">All parts</a></li></ul></section>
+      <section><h3>Help</h3><ul><li><a href="#support">Fitment support</a></li><li><a href="#support">Shipping and returns</a></li></ul></section>
+      <section id="account"><h3>Account</h3><ul><li><a href="index.html#account">Sign in</a></li><li id="cart"><a href="index.html#cart">View cart</a></li></ul></section>
+    </div>
+  </footer>
+</body>
+</html>
