@@ -1,0 +1,9 @@
+file '/mnt/data/final_project_final_package/assets/slides/slide1.jpg'
+duration 3
+file '/mnt/data/final_project_final_package/assets/slides/slide2.jpg'
+duration 3
+file '/mnt/data/final_project_final_package/assets/slides/slide3.jpg'
+duration 3
+file '/mnt/data/final_project_final_package/assets/slides/slide4.jpg'
+duration 3
+file '/mnt/data/final_project_final_package/assets/slides/slide4.jpg'

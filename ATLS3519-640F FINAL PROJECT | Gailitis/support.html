@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spohn Performance | Technical Support</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="utility-bar">
+  <div class="container utility-inner">
+    <p>Technical &amp; sales support: Monday–Friday, 8:30 AM–3:30 PM Eastern</p>
+    <p><a href="support.html">Tech line: 888-365-6064</a></p>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">SPOHN</span>
+      <span class="brand-sub">chassis • suspension • drivetrain</span>
+    </a>
+    <form class="search-form" action="products.html" method="get">
+      <label for="site-search">Search products, vehicles, or part numbers</label>
+      <input id="site-search" name="q" type="search" placeholder="Example: control arms, D09-1500-209">
+      <button type="submit">Search</button>
+    </form>
+    <nav class="quick-links" aria-label="Account and cart">
+      <a href="support.html#order-status">Order status</a>
+      <a href="customer-cars.html">Customer cars</a>
+    </nav>
+  </div>
+  <nav class="primary-nav" aria-label="Primary">
+    <div class="container nav-inner">
+      <a href="index.html" >Home</a>
+      <a href="products.html" >Products</a>
+      <a href="support.html" aria-current="page">Technical support</a>
+      <a href="customer-cars.html" >Customer cars</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+  <section class="subhero">
+    <div class="container subhero-grid">
+      <div>
+        <p class="eyebrow">technical support</p>
+        <h1>Technical support and order help</h1>
+        <p>Contact the technical support team for fitment questions, product applications, order help, and general sales assistance.</p>
+      </div>
+      <aside class="summary-box">
+        <h2>Contact summary</h2>
+        <p><strong>Address:</strong> 494 E Lincoln Ave, Myerstown, PA 17067</p>
+        <p><strong>Tech line:</strong> 888-365-6064</p>
+        <p><strong>Order line:</strong> 888-265-6064</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container info-grid">
+      <article class="info-card">
+        <h2>Technical and sales support hours</h2>
+        <p>Monday–Friday, 8:30 AM–3:30 PM Eastern</p>
+        <p>Customers outside the U.S. and Canada can call 717-866-6033.</p>
+        <p><a class="button small-button" href="https://www.spohn.net/contact/" target="_blank" rel="noopener">Directions and full contact details</a></p>
+      </article>
+      <article class="info-card" id="order-status">
+        <h2>Order status and account help</h2>
+        <p>For order-status questions, have your order number and contact information ready before calling or submitting a support request.</p>
+        <ul>
+          <li>Order-status questions: 888-365-6064 during support hours</li>
+          <li>Order line (orders only): 888-265-6064</li>
+          <li>Support Center and FAQ: <a href="https://support.spohn.net/" target="_blank" rel="noopener">support.spohn.net</a></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section alt-section">
+    <div class="container form-layout">
+      <div>
+        <h2>Contact technical support</h2>
+        <p>Provide your contact information, vehicle details, and a description of the issue so the support team can respond efficiently.</p>
+        <p><strong>Required fields</strong> are marked with an asterisk.</p>
+      </div>
+      <form class="support-form" id="support-form" data-validate novalidate>
+        <div id="form-errors" class="error-summary" role="alert" aria-live="assertive" hidden></div>
+        <div id="form-success" class="success-message" hidden>Thank you. Your support request has been received.</div>
+        <div class="field-row">
+          <div>
+            <label for="full-name">Full name <span aria-hidden="true">*</span></label>
+            <input id="full-name" name="full-name" type="text" required>
+          </div>
+          <div>
+            <label for="email">Email address <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" required>
+          </div>
+        </div>
+        <div class="field-row">
+          <div>
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel">
+          </div>
+          <div>
+            <label for="topic">Support topic <span aria-hidden="true">*</span></label>
+            <select id="topic" name="topic" required>
+              <option value="">Select a topic</option>
+              <option>Fitment question</option>
+              <option>Technical support</option>
+              <option>Order status</option>
+              <option>General sales question</option>
+            </select>
+          </div>
+        </div>
+        <fieldset>
+          <legend>Vehicle details</legend>
+          <div class="field-row">
+            <div>
+              <label for="vehicle-year">Year <span aria-hidden="true">*</span></label>
+              <input id="vehicle-year" name="vehicle-year" type="text" required>
+            </div>
+            <div>
+              <label for="vehicle-make">Make <span aria-hidden="true">*</span></label>
+              <input id="vehicle-make" name="vehicle-make" type="text" required>
+            </div>
+            <div>
+              <label for="vehicle-model">Model <span aria-hidden="true">*</span></label>
+              <input id="vehicle-model" name="vehicle-model" type="text" required>
+            </div>
+          </div>
+        </fieldset>
+        <div>
+          <label for="order-number">Order number</label>
+          <input id="order-number" name="order-number" type="text" aria-describedby="order-hint">
+          <p id="order-hint" class="hint">Optional. Include this if your question is about a past order.</p>
+        </div>
+        <div>
+          <label for="message">Message <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit">Submit support request</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Frequently asked questions</h2>
+      <div class="accordion" data-accordion>
+        <div class="accordion-item">
+          <h3><button type="button" aria-expanded="false" aria-controls="faq1" id="faq1-button">How do I know whether a part fits my vehicle?</button></h3>
+          <div id="faq1" role="region" aria-labelledby="faq1-button" hidden>
+            <p>Use the year / make / model path first, then contact technical support with any suspension changes or special configurations before ordering.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3><button type="button" aria-expanded="false" aria-controls="faq2" id="faq2-button">Where can I check my order status?</button></h3>
+          <div id="faq2" role="region" aria-labelledby="faq2-button" hidden>
+            <p>Call 888-365-6064 during support hours or submit the form above with your order number and contact information.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3><button type="button" aria-expanded="false" aria-controls="faq3" id="faq3-button">What support resources are available online?</button></h3>
+          <div id="faq3" role="region" aria-labelledby="faq3-button" hidden>
+            <p>Use the Support Center, FAQ / knowledgebase, live chat, or the technical support form above.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section>
+      <h2>Spohn Performance</h2>
+      <p>494 E Lincoln Ave, Myerstown, PA 17067</p>
+      <p>General and tech support: 888-365-6064</p>
+      <p>Order line: 888-265-6064</p>
+    </section>
+    <section>
+      <h3>Support resources</h3>
+      <ul>
+        <li><a href="support.html">Technical support page</a></li>
+        <li><a href="https://support.spohn.net/" target="_blank" rel="noopener">Support Center / FAQ</a></li>
+        <li><a href="https://www.spohn.net/contact/" target="_blank" rel="noopener">Official contact page</a></li>
+      </ul>
+    </section>
+    <section>
+      <h3>Built for performance</h3>
+      <p>Suspension, chassis, and drivetrain components supported by clear fitment information and direct technical assistance.</p>
+    </section>
+  </div>
+  <p class="copyright">&copy; <span class="current-year"></span> Spohn Performance.</p>
+</footer>
+</body>
+</html>
